@@ -195,6 +195,10 @@ def main():
             print("rock smashes the scissor! you lose")
 
     play_again = input("play again enter y/n  :")
+    if play_again.lower() != "y":
+        return main()
+    else:
+        pass
 
 if __name__ == '__main__':
     main()
